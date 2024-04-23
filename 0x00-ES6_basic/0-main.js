@@ -1,4 +1,3 @@
-import taskBlock from './1-block-scoped';
+import appendToEachArrayValue from './10-loops.js';
 
-console.log(taskBlock(true));
-console.log(taskBlock(false));
+console.log(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctly-'));
