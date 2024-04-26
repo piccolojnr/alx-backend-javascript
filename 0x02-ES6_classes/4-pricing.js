@@ -1,4 +1,4 @@
-import Currency from "./3-currency";
+import Currency from './3-currency';
 
 class Pricing {
   constructor(amount, currency) {
@@ -10,8 +10,8 @@ class Pricing {
    * @param {Number} amount
    */
   set amount(amount) {
-    if (typeof amount !== "number") {
-      throw new TypeError("Amount must be a Number");
+    if (typeof amount !== 'number') {
+      throw new TypeError('Amount must be a Number');
     }
     this._amount = amount;
   }
@@ -27,7 +27,7 @@ class Pricing {
     if (currency instanceof Currency) {
       this._currency = currency;
     } else {
-      throw new TypeError("currency must be an instance of Currency");
+      throw new TypeError('currency must be an instance of Currency');
     }
   }
 
@@ -44,12 +44,12 @@ class Pricing {
    * @param {Number} conversionRate
    */
   static convertPrice(amount, conversionRate) {
-    if (typeof amount !== "number") {
-      throw new TypeError("amount must be a number");
+    if (typeof amount !== 'number') {
+      throw new TypeError('amount must be a number');
     }
 
-    if (typeof conversionRate !== "number") {
-      throw new TypeError("conversionRate must be a number");
+    if (typeof conversionRate !== 'number') {
+      throw new TypeError('conversionRate must be a number');
     }
 
     return amount * conversionRate;
