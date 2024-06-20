@@ -4,4 +4,4 @@ function getPaymentTokenFromAPI(success) {
   else return Promise.reject("Unsuccessful response from the API");
 }
 
-export default getPaymentTokenFromAPI;
+module.exports = getPaymentTokenFromAPI;

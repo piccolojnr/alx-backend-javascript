@@ -4,4 +4,4 @@ function calculateNumber(a, b) {
   return roundedA + roundedB;
 }
 
-export default calculateNumber;
+module.exports = calculateNumber;
