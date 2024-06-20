@@ -19,4 +19,11 @@ describe("Index page", () => {
       done();
     });
   });
+
+  it("GET /cart/hello returns 404", (done) => {
+    request.get(`${API_URL}/cart/hello`, (_err, res) => {
+      expect(res.statusCode).to.be.equal(404);
+      done();
+    });
+  });
 });
